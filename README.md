@@ -31,6 +31,40 @@ See the section about [deployment](https://facebook.github.io/create-react-app/d
 
 ### `npm run eject`
 
+### `Purpose of this Exercise`
+
+This exercise gives practice with ES2015-style import/export.
+
+So that one can work with import/export, we’ll use create-react-app to get a starter skeleton. However, we won’t be building an actual React app.
+
+### `Requirements`
+
+
+For this assignment you should create three JavaScript files:
+
+src/helpers.js
+This file should export two array helper functions:
+
+choice(items): returns a randomly selected item from array of items
+remove(items, item): removes the first matching item from items, if item exists, and returns it. Otherwise returns undefined.
+src/foods.js
+This file should export this array of fruits:
+
+[
+  "🍇", "🍈", "🍉", "🍊", "🍋", "🍌", "🍍", "🍎",
+  "🍏", "🍐", "🍒", "🍓", "🥝", "🍅", "🥑",
+];
+src/index.js
+This file should import the fruits and both array helpers. It should then:
+
+Randomly draw a fruit from the array
+Log the message “I’d like one RANDOMFRUIT, please.”
+Log the message “Here you go: RANDOMFRUIT”
+Log the message “Delicious! May I have another?”
+Remove the fruit from the array of fruits
+Log the message “I’m sorry, we’re all out. We have FRUITSLEFT left.”
+Testing This
+
 **Note: this is a one-way operation. Once you `eject`, you can’t go back!**
 
 If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
